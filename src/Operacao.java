@@ -16,15 +16,7 @@ public class Operacao implements Serializable {
     private int num1;
     private int num2;
     private String op; 
-    private int resultado;
 
-    public int getResultado() {
-        return resultado;
-    }
-
-    public void setResultado(int resultado) {
-        this.resultado = resultado;
-    }
 
     public int getNum1() {
         return num1;
@@ -48,13 +40,6 @@ public class Operacao implements Serializable {
 
     public void setOp(String op) {
         this.op = op;
-    }
-    
-    @Override
-    public String toString(){
-    String text;
-        text = this.getNum1() + this.getOp() + this.getNum2();
-        return text;
-    }
+    }  
     
 }
